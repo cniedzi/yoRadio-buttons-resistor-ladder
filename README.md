@@ -10,7 +10,7 @@ The required connections are shown in the file "Resistor ladder connection diagr
 
 Installation:
 1. Replace the "player.cpp" file in the "yoradio-main\yoRadio\src\core" directory with the provided one, or manually add the three required sections to the appropriate parts of your "player.cpp" file. Each section to be added is delimited by lines: /**************** EXTENDER ****************/ in the provided "player.cpp" file.
-2. In the above mentioned file "player.cpp" set the expander parameters according to your configuration (section: EXPANDER CONFIGURATION)
+2. In the above mentioned file "player.cpp" set the expander parameters according to your configuration (section: CONFIGURATION)
 3. Build & upload
 
 Enjoy!
@@ -27,7 +27,7 @@ Wymagane połączenia zostały przedstawione w pliku "Resistor ladder connection
 
 Instalacja:
 1. Zastąp plik "player.cpp" w katalogu yoradio-main\yoRadio\src\core plikiem z tego repozytorium, lub ręcznie dodaj trzy wymagane sekcje w odpowiednich miejscach pliku "player.cpp". Każda z ww. sekcji jest ograniczona liniami: /**************** EXTENDER ****************/ w dostarczonym pliku "player.cpp".
-2. W wyżej wymienionym pliku „player.cpp” ustaw parametry ekspandera zgodnie ze swoją konfiguracją (sekcja: EXPANDER CONFIGURATION).
+2. W wyżej wymienionym pliku „player.cpp” ustaw parametry ekspandera zgodnie ze swoją konfiguracją (sekcja: CONFIGURATION).
 3. Skompiluj i wgraj (Build & upload)
 
 Miłego korzystania!
