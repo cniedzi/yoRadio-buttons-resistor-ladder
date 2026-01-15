@@ -19,7 +19,7 @@ QueueHandle_t playerQueue;
 
 /****************  EXTENDER ****************/
 // Multi-button input resistor ladder Mod by C.Niedzinski 2026
-// ver. 1.00
+// ver. 1.01
 //
 
 
@@ -29,7 +29,7 @@ QueueHandle_t playerQueue;
 
 
 //--------------------------------------------------------------------------
-// KEYBOARD CONFIGURATION - You have to set the below definitions according to your configuration !!!
+// CONFIGURATION - You have to set the below definitions according to your configuration !!!
 #define BUTTONS_COUNT 5 // number of buttons
 #define BUTTONS_ADC_PIN 32 // GPIO for analog reading. IMPORTANT: must belong to the ADC1 Group !!!
 //--------------------------------------------------------------------------
