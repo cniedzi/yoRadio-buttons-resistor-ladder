@@ -97,7 +97,6 @@ void handleAnalogReadingButtons() {
                 extenderPreferences.getBytes("Buttons", temp, BUTTONS_COUNT * 2);
                 temp[offset] = static_cast<uint8_t>(newStation & 0xFF);
                 temp[offset + 1] = static_cast<uint8_t>((newStation >> 8) & 0xFF);
-                Serial.printf("ZAPISANO:%d\n", extenderPreferences.putBytes("Buttons", temp, BUTTONS_COUNT * 2));
               }  
             }
             lastButtonPushed = 0;
