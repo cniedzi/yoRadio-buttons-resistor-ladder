@@ -19,7 +19,7 @@ QueueHandle_t playerQueue;
 
 /****************  EXTENDER ****************/
 // Multi-button input resistor ladder Mod by C.Niedzinski 2026
-// ver. 1.01
+// ver. 1.02
 //
 
 
@@ -45,7 +45,7 @@ const int tolerance = 150;
 
 
 
-uint8_t analogRead() {
+uint8_t getKey() {
   // Average value calculated from 32 readings
   long sum = 0;
   for(int i=0; i<32; i++) sum += analogRead(BUTTONS_ADC_PIN);
@@ -65,7 +65,7 @@ uint8_t analogRead() {
 
 
 void handleAnalogReadingButtons() {
-        uint8_t key = analogRead();
+        uint8_t key = getKey();
         if (key > 0 && key <= BUTTONS_COUNT) { // Button pushed
           if (lastButtonPushed == 0) {
             pushButtonStart = millis();
@@ -97,6 +97,7 @@ void handleAnalogReadingButtons() {
                 extenderPreferences.getBytes("Buttons", temp, BUTTONS_COUNT * 2);
                 temp[offset] = static_cast<uint8_t>(newStation & 0xFF);
                 temp[offset + 1] = static_cast<uint8_t>((newStation >> 8) & 0xFF);
+                extenderPreferences.putBytes("Buttons", temp, BUTTONS_COUNT * 2);
               }  
             }
             lastButtonPushed = 0;
